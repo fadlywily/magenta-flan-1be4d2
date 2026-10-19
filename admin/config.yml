@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: id
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "homepage"
+    label: "Konten Halaman Utama"
+    files:
+      - name: "home"
+        label: "Beranda"
+        file: "content/home.json"
+        format: "json"
+        fields:
+          - label: "Judul utama"
+            name: "hero_title"
+            widget: "string"
+          - label: "Deskripsi utama"
+            name: "hero_description"
+            widget: "text"
+          - label: "Pertanyaan dan konteks"
+            name: "problem_questions"
+            widget: "text"
+          - label: "Ringkasan solusi Mushaf"
+            name: "solution_callout"
+            widget: "text"
